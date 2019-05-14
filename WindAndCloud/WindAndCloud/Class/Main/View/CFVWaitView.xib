@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CFVWaitView">
+            <rect key="frame" x="0.0" y="0.0" width="121" height="73"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chess_poker_3_4.png" translatesAutoresizingMaskIntoConstraints="NO" id="I4H-Hd-xVJ" userLabel="ThirdCardImgView">
+                    <rect key="frame" x="0.0" y="0.0" width="53" height="73"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chess_poker_2_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="sPk-0l-TLu" userLabel="SecondCardImgView">
+                    <rect key="frame" x="34" y="0.0" width="53" height="73"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chess_poker_3_3.png" translatesAutoresizingMaskIntoConstraints="NO" id="oLm-zu-Gdm" userLabel="FirstCardImgView">
+                    <rect key="frame" x="68" y="0.0" width="53" height="73"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="I4H-Hd-xVJ" firstAttribute="height" secondItem="oLm-zu-Gdm" secondAttribute="height" id="0AS-wc-lhe"/>
+                <constraint firstItem="sPk-0l-TLu" firstAttribute="width" secondItem="oLm-zu-Gdm" secondAttribute="width" id="0HW-DR-XRb"/>
+                <constraint firstAttribute="bottom" secondItem="oLm-zu-Gdm" secondAttribute="bottom" id="7rF-jt-9tS"/>
+                <constraint firstItem="oLm-zu-Gdm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9Wb-eX-qIz"/>
+                <constraint firstItem="sPk-0l-TLu" firstAttribute="height" secondItem="oLm-zu-Gdm" secondAttribute="height" id="BqV-UZ-Mmi"/>
+                <constraint firstAttribute="bottom" secondItem="I4H-Hd-xVJ" secondAttribute="bottom" id="KZr-vC-huS"/>
+                <constraint firstItem="oLm-zu-Gdm" firstAttribute="leading" secondItem="I4H-Hd-xVJ" secondAttribute="trailing" constant="15" id="Lh6-lS-NGZ"/>
+                <constraint firstItem="I4H-Hd-xVJ" firstAttribute="width" secondItem="oLm-zu-Gdm" secondAttribute="width" id="aRL-cB-QS3"/>
+                <constraint firstAttribute="trailing" secondItem="oLm-zu-Gdm" secondAttribute="trailing" id="bfU-cM-Kma"/>
+                <constraint firstItem="sPk-0l-TLu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cau-0J-2eh"/>
+                <constraint firstItem="sPk-0l-TLu" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="joI-Ig-WNl"/>
+                <constraint firstItem="I4H-Hd-xVJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oze-uY-2EY"/>
+                <constraint firstItem="I4H-Hd-xVJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ucI-KT-Jnp"/>
+                <constraint firstAttribute="bottom" secondItem="sPk-0l-TLu" secondAttribute="bottom" id="wUz-xr-sGl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="firstWaitPockerImgView" destination="oLm-zu-Gdm" id="Omu-NT-yA4"/>
+                <outlet property="secondWaitPockerImgView" destination="sPk-0l-TLu" id="6jj-gD-2Nc"/>
+                <outlet property="thirdWaitPockerImgView" destination="I4H-Hd-xVJ" id="aDT-hk-z9w"/>
+            </connections>
+            <point key="canvasLocation" x="-176.08695652173915" y="266.85267857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chess_poker_2_1.png" width="114" height="159"/>
+        <image name="chess_poker_3_3.png" width="114" height="159"/>
+        <image name="chess_poker_3_4.png" width="114" height="159"/>
+    </resources>
+</document>
